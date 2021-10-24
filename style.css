@@ -19,6 +19,15 @@ button {
   font-weight: 800;
   padding: 0.5rem 2rem;
   border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e5e7eb;
+  color: #3882f6;
+}
+button:active {
+  background-color: #1d70f7;
+  color: #e5e7eb;
 }
 header {
   height: 10vh;
@@ -49,14 +58,14 @@ header {
 
 /* Hero Section */
 
-.hero {
+#hero {
   height: 75vh;
   display: flex;
   background-color: #1f2937;
   color: #f9faf8;
 }
 .main-text {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bolder;
 }
 .text {
@@ -80,4 +89,97 @@ header {
 }
 .hero-btn {
   margin-top: 10px;
+}
+
+/* Product section */
+
+#product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 75vh;
+  flex-grow: 1;
+  padding-bottom: 100px;
+}
+.product-text {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  padding: 3rem;
+}
+.container {
+  display: flex;
+  text-align: center;
+  align-items: stretch;
+}
+.card img {
+  height: 200px;
+  width: 200px;
+  border: #4d8cf1 5px solid;
+  border-radius: 10px;
+}
+.card {
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  align-items: center;
+  padding-left: 70px;
+}
+
+/* Quote section */
+
+#quote {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  color: #1f2937;
+  font-style: italic;
+  min-height: 60vh;
+  font-size: 36px;
+  justify-content: center;
+  padding: 0 200px;
+}
+#quote b {
+  text-align: right;
+  font-size: large;
+}
+
+/* Call to action sign up section */
+
+.cta {
+  min-height: 50vh;
+  display: flex;
+}
+.cta-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  background-color: #4183ee;
+  color: #f9faf8;
+  padding: 40px;
+  border-radius: 10px;
+}
+.cta-main {
+  font: 25px large;
+  padding-bottom: 2px;
+}
+.cta-sub {
+  font: 14px small;
+}
+.cta-btn button {
+  border: #f9faf8 2px solid;
+}
+
+/* Footer */
+
+footer {
+  min-height: 12vh;
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
